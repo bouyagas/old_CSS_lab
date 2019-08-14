@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <link rel="stylesheet" href="css/main.css" />
+  <script>
+    function appStore() {
+      alert('Going to the App Store');
+    }
+
+    function googleStore() {
+      alert('Going to the Google Play Store');
+    }
+  </script>
   <head>
     <title>Instagram</title>
   </head>
@@ -31,11 +40,15 @@
         </p>
       </div>
       <div class="store">
-        <div class="iphone-store">
-          <img src="./images/badge-iphone.png" alt="badge-iphone" />
+        <div class="iphone-store" onclick="appStore();">
+          <img src="./images/badge-iphone.png" alt="badge-iphone" id="iphone" />
         </div>
-        <div class="android-store">
-          <img src="./images/badge-android.png" alt="badge-android" />
+        <div class="android-store" onclick="googleStore();">
+          <img
+            src="./images/badge-android.png"
+            alt="badge-android"
+            id="android"
+          />
         </div>
       </div>
     </header>
